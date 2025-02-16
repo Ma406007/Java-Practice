@@ -8,7 +8,7 @@ public class arraylist {
 
         //创建集合对象
         //泛型:限定集合中存储数据的类型
-        //ArrayList<String> list = new ArrayList<>();
+        //ArrayList<String> list = new ArrayList<String>();
         //JDK7以后:
         ArrayList<String> List = new ArrayList<>();
 
