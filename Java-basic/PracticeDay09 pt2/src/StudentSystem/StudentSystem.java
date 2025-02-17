@@ -5,6 +5,12 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class StudentSystem {
+    private static final int ADD_STUDENT = 1;
+    private static final int DELETE_STUDENT = 2;
+    private static final int CHANGE_STUDENT = 3;
+    private static final int QUERY_STUDENT = 4;
+    private static final int QUIT = 5;
+
     public static void main(String[] args) {
         ArrayList<User> users = new ArrayList<>();
 
@@ -215,7 +221,7 @@ public class StudentSystem {
             int choice2 = sc.nextInt();
             switch (choice2) {
                 //1:添加学生信息
-                case 1:
+                case ADD_STUDENT:
                     System.out.println("请输入要添加的学生的id:");
                     id = sc.next();
                     while (checkStudentId(students, id)) {
@@ -232,7 +238,7 @@ public class StudentSystem {
                     continue;
 
                     //2:删除学生信息
-                case 2:
+                case DELETE_STUDENT:
                     if (students.isEmpty()) {
                         System.out.println("删除失败,当前系统中无学生信息");
                         continue;
@@ -249,7 +255,7 @@ public class StudentSystem {
                     continue;
 
                     //3:修改学生信息
-                case 3:
+                case CHANGE_STUDENT:
                     if (students.isEmpty()) {
                         System.out.println("修改失败,当前系统中无学生信息");
                         continue;
@@ -272,7 +278,7 @@ public class StudentSystem {
                     continue;
 
                     //4:查询学生信息
-                case 4:
+                case QUERY_STUDENT:
                     if (students.isEmpty()) {
                         System.out.println("查询失败,当前系统中无学生信息");
                         continue;
@@ -283,7 +289,7 @@ public class StudentSystem {
                     continue;
 
                     //5:退出管理系统
-                case 5:
+                case QUIT:
                     flag = true;
                     break;
 
