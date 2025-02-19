@@ -28,5 +28,7 @@ public class RegisterJFrame extends JFrame {
 
         //让窗口显示出来
         this.setVisible(true);
+
+        getContentPane();
     }
 }
