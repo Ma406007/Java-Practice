@@ -2,7 +2,7 @@ package Collection.JavaSet;
 
 import java.util.Objects;
 
-public class Student {
+public class Student implements Comparable<Student> {
     private String name;
     private int age;
 
@@ -41,5 +41,16 @@ public class Student {
     @Override
     public String toString() {
         return "Student [name=" + name + ", age=" + age + "]";
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        //this表示当前要添加的元素
+        //o表示已经在红黑树存在的元素
+        int result = this.getAge() - o.getAge();
+        //返回值为负数,认为要添加的元素是较小值,存左边
+        //返回值为正数,认为要添加的元素是较大值,存右边
+        //返回值为0,认为要添加的元素已经存在,需要舍弃
+        return result;
     }
 }
