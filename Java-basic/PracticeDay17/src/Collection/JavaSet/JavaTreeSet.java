@@ -6,7 +6,7 @@ import java.util.TreeSet;
 //TreeSet的特点:不重复,无索引,可排序(按照元素的默认规则(由小到大)进行排序)
 //TreeSet集合底层基于红黑树实现排序,增删查改性能都较好
 
-public class JavaTressSet {
+public class JavaTreeSet {
     public static void main(String[] args) {
         TreeSet<Integer> ts =  new TreeSet<>();
 
