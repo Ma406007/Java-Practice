@@ -6,7 +6,7 @@ public class FileTraverse {
     public static void main(String[] args) {
         //File的常见方法(获取并遍历)
         //public File[] listFiles() 获取当前路径下的所有内容
-        File file = new  File("E:\\JavaCode\\TempFile");
+        File file = new File("E:\\JavaCode\\TempFile");
         File[] files = file.listFiles();
         for (File f : files) {
             System.out.println(f);
