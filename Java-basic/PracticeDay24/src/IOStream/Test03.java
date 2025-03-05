@@ -20,23 +20,23 @@ public class Test03 {
     public static void main(String[] args) throws IOException {
         FileWriter fw = new FileWriter("PracticeDay24\\use.txt", true);
         FileReader fr = new FileReader("PracticeDay24\\use.txt");
+        StringBuilder sb1 = new StringBuilder();
         char count = 'c';
-        fw.write(count);
 
-        int len = 1;
+        fw.write(count);
+        fw.close();
+
         int b;
         while ((b = fr.read()) != -1) {
-            len++;
+            sb1.append(count);
+            System.out.println(sb1.length());
         }
 
-        if (len <= 3) {
-            System.out.println("欢迎使用本软件,第" + len + "次使用免费");
+        if (sb1.length() <= 2) {
+            System.out.println("欢迎使用本软件,第" + sb1.length() + "次使用免费~");
         }
         else {
-            System.out.println("本软件只能免费使用3次,欢迎您注册会员后继续使用");
+            System.out.println("本软件只能免费使用3次,欢迎您注册会员后继续使用~");
         }
-
-        fr.close();
-        fw.close();
     }
 }

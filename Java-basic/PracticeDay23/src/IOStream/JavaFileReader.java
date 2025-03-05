@@ -13,9 +13,9 @@ public class JavaFileReader {
         //操作本地文件的字符输入流
         //1.创建字符输入流对象
         //细节:如果文件不存在就会直接报错
-        //public JavaFileReader(File file) 创建字符输入流关联本地文件
-        //public JavaFileReader(String pathname) 创建字符输入流关联本地文件
-        //JavaFileReader fr = new JavaFileReader("PracticeDay23\\a.txt");
+        //public FileReader(File file) 创建字符输入流关联本地文件
+        //public FileReader(String pathname) 创建字符输入流关联本地文件
+        //FileReader fr = new FileReader("PracticeDay23\\a.txt");
         FileReader fr2 = new java.io.FileReader("PracticeDay23\\a.txt");
 
         //2.读取数据
