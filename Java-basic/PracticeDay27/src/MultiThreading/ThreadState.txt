@@ -1,0 +1,7 @@
+线程的六大状态:
+1.新建状态(New) 创建线程对象
+2.就绪状态(Runnable) start方法
+3.阻塞状态(Blocked) 无法获得锁对象
+4.等待状态(Waiting) wait()方法
+5.计时等待(Timed_Waiting) sleep()方法
+6.结束状态(Terminated) 全部代码执行完毕
